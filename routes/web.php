@@ -39,3 +39,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/todo', function () {
     return view('todo');
     
 })->name('todo');
+
+
+//Livewire
+/**
+ * 
+ *Route::middleware(['auth:sanctum', 'verified'])->get('/todo', [\App\Http\Livewire\Pasta\Nombre::class])
+
+  
+ */
