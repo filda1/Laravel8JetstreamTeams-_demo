@@ -59,3 +59,15 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 }
+
+/**
+ * 
+ * MAIL_MAILER=smtp
+MAIL_HOST=n-solucoes.pt
+MAIL_PORT=587
+MAIL_USERNAME=no-reply@n-solucoes.pt
+MAIL_PASSWORD=no-reply2018
+MAIL_ENCRYPTION=TLS
+MAIL_FROM_ADDRESS=no-reply@n-solucoes.pt
+MAIL_FROM_NAME="${APP_NAME}"
+ */
