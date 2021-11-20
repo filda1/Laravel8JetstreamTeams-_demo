@@ -23,6 +23,12 @@ class CreateTeam implements CreatesTeams
 
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
+            'serverdb_name' => ['required', 'string', 'max:255'],
+            'serverdb_alias' => ['required', 'string', 'max:255'],
+            'serverdb_ip' => ['required', 'string', 'max:255'],
+            'serverdb_user' => ['required', 'string', 'max:255'],
+            'serverdb_password' => ['required', 'string', 'max:255'],
+            'serverdb_db' => ['required', 'string', 'max:255'],
             'serverdb_port' => ['required', 'integer'],
         ])->validateWithBag('createTeam');
 
