@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-11-2021 a las 17:25:16
+-- Tiempo de generación: 20-11-2021 a las 20:47:48
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 7.3.27
 
@@ -114,7 +114,9 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('6DthlJlNr0uPInNk6nnpTe9fLCtwf2nZNM4L01Xc', 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 OPR/81.0.4196.54', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiclNiZm1MNGcyS2pzYnNRZTVZcDlVOTQxYm9zaWgxZmF6S0RIWGFBcSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC90b2RvIjt9czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjM7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCRPQ3d5STNGb1ozZmlucC85M3JkTUhlNUF0cWhoLmk1OFNPLzJKSTg3Qi90VFVkSGVYYUtVRyI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkT0N3eUkzRm9aM2ZpbnAvOTNyZE1IZTVBdHFoaC5pNThTTy8ySkk4N0IvdFRVZEhlWGFLVUciO30=', 1637423613);
+('4Y3n3Ieo33cJhVrXfAxrCfXALPHnhYDATrU0sWv6', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 OPR/81.0.4196.54', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMEU1V0xaWUJ3WFdZeTNaQmtoV1pFVWNZUnZiY21CREM2bTZTSExlUiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fX0=', 1637437319),
+('CvAJKBarlxPRPWQ8w5o8Z3QjPowWNMCHlOmJCzGU', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiS3NoRzZYV1lBcnA0YnRzTnY1Y09LZ0tvVVQyc1JMazZCSDRxTGlCciI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fX0=', 1637437523),
+('eld5TLcH7Aj0mo8weG5McU9aYwD9oXLCxbMaYhOa', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibWRKZ0pPSUNNdzF0bmw4TnJQMFU5Nk42eHVIY2ViWFpTWUhYMTV4ZiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1637437609);
 
 -- --------------------------------------------------------
 
@@ -149,8 +151,7 @@ CREATE TABLE `teams` (
 --
 
 INSERT INTO `teams` (`id`, `user_id`, `name`, `personal_team`, `serverdb_name`, `serverdb_alias`, `serverdb_ip`, `serverdb_port`, `serverdb_user`, `serverdb_password`, `serverdb_db`, `username`, `userid`, `status`, `comment`, `blocked`, `active`, `created_at`, `updated_at`) VALUES
-(1, 2, 'Admin\'s Team', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'OK', NULL, NULL, NULL, NULL, NULL, NULL, '2021-11-20 12:31:45', '2021-11-20 12:31:45'),
-(2, 3, 'Yo\'s Team', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-11-20 15:48:26', '2021-11-20 15:48:26');
+(6, 4, 'Admin\'s Team', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-11-20 19:39:17', '2021-11-20 19:39:17');
 
 -- --------------------------------------------------------
 
@@ -167,13 +168,6 @@ CREATE TABLE `team_invitations` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Volcado de datos para la tabla `team_invitations`
---
-
-INSERT INTO `team_invitations` (`id`, `team_id`, `email`, `role`, `created_at`, `updated_at`) VALUES
-(1, 1, 'soulissepreimu-2016@yopmail.com', 'admin', '2021-11-20 15:39:07', '2021-11-20 15:39:07');
-
 -- --------------------------------------------------------
 
 --
@@ -188,13 +182,6 @@ CREATE TABLE `team_user` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Volcado de datos para la tabla `team_user`
---
-
-INSERT INTO `team_user` (`id`, `team_id`, `user_id`, `role`, `created_at`, `updated_at`) VALUES
-(1, 1, 3, 'admin', '2021-11-20 15:48:27', '2021-11-20 15:48:27');
 
 -- --------------------------------------------------------
 
@@ -222,8 +209,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(2, 'Admin', 'admin@admin.com', NULL, '$2y$10$6.wdhOocKfVUiVwePhQvBuP7pSohHaeuc1szhQX8vbrwT5UxYvo6C', NULL, NULL, NULL, 1, NULL, '2021-11-20 12:31:45', '2021-11-20 12:31:49'),
-(3, 'Yo', '3000ptsolaum@yopmail.com', NULL, '$2y$10$OCwyI3FoZ3finp/93rdMHe5Atqhh.i58SO/2JI87B/tTUdHeXaKUG', NULL, NULL, NULL, 2, NULL, '2021-11-20 15:48:26', '2021-11-20 15:53:21');
+(2, 'Admin', 'admin@admin.com', NULL, '$2y$10$6.wdhOocKfVUiVwePhQvBuP7pSohHaeuc1szhQX8vbrwT5UxYvo6C', NULL, NULL, NULL, 3, NULL, '2021-11-20 12:31:45', '2021-11-20 18:34:40'),
+(3, 'Yo', '3000ptsolaum@yopmail.com', NULL, '$2y$10$OCwyI3FoZ3finp/93rdMHe5Atqhh.i58SO/2JI87B/tTUdHeXaKUG', NULL, NULL, NULL, 2, NULL, '2021-11-20 15:48:26', '2021-11-20 19:11:50'),
+(4, 'Admin', 'filintosilva@napp.pt', NULL, '$2y$10$cLjfWyaQYvjX8qOY5ojHqeY1Ctu3c7GicyYsincwmmy4QRDnjLqnu', NULL, NULL, NULL, 6, NULL, '2021-11-20 19:39:16', '2021-11-20 19:39:18');
 
 --
 -- Índices para tablas volcadas
@@ -318,7 +306,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT de la tabla `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `team_invitations`
@@ -336,7 +324,7 @@ ALTER TABLE `team_user`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
