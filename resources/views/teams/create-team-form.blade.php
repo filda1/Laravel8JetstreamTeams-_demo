@@ -26,6 +26,50 @@
             <x-jet-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autofocus />
             <x-jet-input-error for="name" class="mt-2" />
         </div>
+        <!------ Server db ------>
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="serverdb_name" value="{{ __(' ServerDB Name') }}" />
+            <x-jet-input id="serverdb_name" type="text" class="mt-1 block w-full" wire:model.defer="state.serverdb_name" autofocus />
+            <x-jet-input-error for="serverdb_name" class="mt-2" />
+        </div>
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="serverdb_alias" value="{{ __(' ServerDB Alias') }}" />
+            <x-jet-input id="serverdb_alias" type="text" class="mt-1 block w-full" wire:model.defer="state.serverdb_alias" autofocus />
+            <x-jet-input-error for="serverdb_alias" class="mt-2" />
+        </div>
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="serverdb_ip" value="{{ __(' ServerDB IP') }}" />
+            <x-jet-input id="serverdb_ip" type="text" class="mt-1 block w-full" wire:model.defer="state.serverdb_ip" autofocus />
+            <x-jet-input-error for="serverdb_ip" class="mt-2" />
+        </div>
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="serverdb_port" value="{{ __(' ServerDB Port') }}" />
+            <x-jet-input id="serverdb_port" type="text" class="mt-1 block w-full" wire:model.defer="state.serverdb_port" autofocus />
+            <x-jet-input-error for="serverdb_port" class="mt-2" />
+        </div>
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="serverdb_user" value="{{ __(' ServerDB User') }}" />
+            <x-jet-input id="serverdb_user" type="text" class="mt-1 block w-full" wire:model.defer="state.serverdb_user" autofocus />
+            <x-jet-input-error for="serverdb_user" class="mt-2" />
+        </div>
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="serverdb_password" value="{{ __(' ServerDB Password') }}" />
+            <x-jet-input id="serverdb_password" type="text" class="mt-1 block w-full" wire:model.defer="state.serverdb_password" autofocus />
+            <x-jet-input-error for="serverdb_password" class="mt-2" />
+        </div>
+
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="serverdb_db" value="{{ __(' ServerDB Database') }}" />
+            <x-jet-input id="serverdb_db" type="text" class="mt-1 block w-full" wire:model.defer="state.serverdb_db" autofocus />
+            <x-jet-input-error for="serverdb_db" class="mt-2" />
+        </div>
+        
+        <!------ Close Server db ------>
     </x-slot>
 
     <x-slot name="actions">

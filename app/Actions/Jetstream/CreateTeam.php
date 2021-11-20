@@ -10,7 +10,7 @@ use Laravel\Jetstream\Jetstream;
 
 class CreateTeam implements CreatesTeams
 {
-    /**
+    /***
      * Validate and create a new team for the given user.
      *
      * @param  mixed  $user
@@ -23,12 +23,20 @@ class CreateTeam implements CreatesTeams
 
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
+            'serverdb_port' => ['required', 'integer'],
         ])->validateWithBag('createTeam');
 
         AddingTeam::dispatch($user);
 
         $user->switchTeam($team = $user->ownedTeams()->create([
             'name' => $input['name'],
+            'serverdb_name' => $input['serverdb_name'],
+            'serverdb_alias' => $input['serverdb_alias'],
+            'serverdb_ip' => $input['serverdb_ip'],
+            'serverdb_port' => $input['serverdb_port'],
+            'serverdb_user' => $input['serverdb_user'],
+            'serverdb_password' => $input['serverdb_password'],
+            'serverdb_db' => $input['serverdb_db'],
             'personal_team' => false,
         ]));
 

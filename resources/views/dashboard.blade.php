@@ -4,7 +4,7 @@
             {{ __('Dashboard') }}
         </h2>
         <h6>
-            {{ Auth::user()->currentTeam->serverdb_db }} -
+            <!---{{ Auth::user()->currentTeam->serverdb_db }} --->
         </h6>
          <h6>
             @livewire('todo.show')
